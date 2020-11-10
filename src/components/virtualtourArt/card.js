@@ -17,13 +17,13 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard({image,heading,text}) {
+export default function MediaCard({ image, heading, text }) {
   const classes = useStyles();
 
   return (
     <Card className={classes.root} elevation={4}>
       <CardActionArea>
-        <img src={image} height="270px" style={{padding:"10px"}}/>
+        <img src={image} height="270px" style={{ padding: "10px" }} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {heading}
